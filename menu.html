@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Seema's Cook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo" style="text-decoration:none;">Seema's Cook <i
+                    class="fas fa-utensils"></i></a>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="business.html">Business</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero"
+        style="min-height: 40vh; height: 40vh; background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); background-size: cover; background-position: center;">
+        <div class="hero-content" style="text-align: center;">
+            <h1>Our Menu</h1>
+            <p>Delicious Pure Veg Delights</p>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section">
+
+        <!-- Burgers -->
+        <div class="menu-category" id="burgers">
+            <h2>Burgers</h2>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name"><span class="veg-icon"><i class="fas fa-circle"
+                                style="font-size: 0.5rem;"></i></span> Paneer Supreme Veg Burger</div>
+                    <div class="item-desc">Soft & Juicy</div>
+                </div>
+                <!-- Real Image -->
+                <img src="images/burger_real_1.png" alt="Paneer Burger">
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name"><span class="veg-icon"><i class="fas fa-circle"
+                                style="font-size: 0.5rem;"></i></span> Loaded Veggie Cheese Burst Burger</div>
+                </div>
+                <img src="images/burger_real_2.png" alt="Cheese Burst Burger">
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name"><span class="veg-icon"><i class="fas fa-circle"
+                                style="font-size: 0.5rem;"></i></span> Cheese Burst Aloo Tikki Burger</div>
+                    <div class="item-desc">Extra Cheesy</div>
+                </div>
+                <img src="images/burger_real_3.png" alt="Cheese Burst Aloo Tikki Burger">
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name"><span class="veg-icon"><i class="fas fa-circle"
+                                style="font-size: 0.5rem;"></i></span> Crispy Aloo Tikki Burger</div>
+                    <div class="item-desc">Street Style</div>
+                </div>
+                <img src="images/burger_real_3.png" alt="Aloo Tikki Burger">
+            </div>
+        </div>
+
+        <!-- Sandwiches -->
+        <div class="menu-category" id="sandwiches">
+            <h2>Sandwiches</h2>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name"><span class="veg-icon"><i class="fas fa-circle"
+                                style="font-size: 0.5rem;"></i></span> Aloo Fry Grilled Sandwich</div>
+                    <div class="item-desc">Street Style Crunch</div>
+                </div>
+                <img src="images/sandwich_real_1.png" alt="Aloo Fry Sandwich">
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name"><span class="veg-icon"><i class="fas fa-circle"
+                                style="font-size: 0.5rem;"></i></span> Veg Loaded Grilled Cheese Sandwich</div>
+                </div>
+                <img src="images/sandwich_real_2.png" alt="Veg Loaded Sandwich">
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name"><span class="veg-icon"><i class="fas fa-circle"
+                                style="font-size: 0.5rem;"></i></span> Paneer Tikka Loaded Cheese Sandwich</div>
+                    <div class="item-desc">Smoky & Rich</div>
+                </div>
+                <img src="images/sandwich_real_2.png" alt="Paneer Tikka Loaded Cheese Sandwich">
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name"><span class="veg-icon"><i class="fas fa-circle"
+                                style="font-size: 0.5rem;"></i></span> Cheese Burst Aloo Fry Sandwich</div>
+                </div>
+                <img src="images/sandwich_real_3.png" alt="Cheese Burst Sandwich">
+            </div>
+        </div>
+
+        <!-- Kebab Rolls & Wraps -->
+        <div class="menu-category" id="rolls">
+            <h2>Kebab Rolls & Wraps</h2>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name"><span class="veg-icon"><i class="fas fa-circle"
+                                style="font-size: 0.5rem;"></i></span> Soya Seekh Kebab Roll</div>
+                    <div class="item-desc">Protein Packed</div>
+                </div>
+                <img src="images/gallery_real_4.jpeg" alt="Soya Kebab Roll">
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name"><span class="veg-icon"><i class="fas fa-circle"
+                                style="font-size: 0.5rem;"></i></span> Veg Gulati Kebab Rolls</div>
+                </div>
+                <img src="images/gallery_real_4.jpeg" alt="Veg Gulati Kebab Rolls">
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name"><span class="veg-icon"><i class="fas fa-circle"
+                                style="font-size: 0.5rem;"></i></span> Paneer Tikka Wrap</div>
+                    <div class="item-desc">Smoky & Creamy</div>
+                </div>
+                <img src="images/wrap_hero.png" alt="Paneer Tikka Wrap">
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name"><span class="veg-icon"><i class="fas fa-circle"
+                                style="font-size: 0.5rem;"></i></span> Veg Shami Kebab</div>
+                </div>
+                <img src="images/gallery_real_3.jpeg" alt="Veg Shami Kebab">
+            </div>
+        </div>
+
+        <!-- Indo Chinese -->
+        <div class="menu-category" id="chinese">
+            <h2>Indo Chinese</h2>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name"><span class="veg-icon"><i class="fas fa-circle"
+                                style="font-size: 0.5rem;"></i></span> Paneer Chili Gravy</div>
+                </div>
+                <img src="images/paneer_chili_gravy.png" alt="Paneer Chili Gravy">
+            </div>
+        </div>
+
+        <!-- Indian Street -->
+        <div class="menu-category" id="street">
+            <h2>Indian Street</h2>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name"><span class="veg-icon"><i class="fas fa-circle"
+                                style="font-size: 0.5rem;"></i></span> Poha Classic Homemade Style</div>
+                </div>
+                <img src="images/poha_breakfast.png" alt="Poha Breakfast">
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name"><span class="veg-icon"><i class="fas fa-circle"
+                                style="font-size: 0.5rem;"></i></span> Aloo Chaap Street Style</div>
+                </div>
+                <!-- Placeholder image until quota resets or user provides one -->
+                <img src="https://placehold.co/400x400/png?text=Aloo+Chaap" alt="Aloo Chaap">
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name"><span class="veg-icon"><i class="fas fa-circle"
+                                style="font-size: 0.5rem;"></i></span> Litti Chokha</div>
+                    <div class="item-desc">Bihari Style Authentic Taste</div>
+                </div>
+                <img src="images/litti_chokha.png" alt="Litti Chokha">
+            </div>
+        </div>
+
+        <!-- Maggie Noodles -->
+        <div class="menu-category" id="maggi">
+            <h2>Maggie Noodles</h2>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name"><span class="veg-icon"><i class="fas fa-circle"
+                                style="font-size: 0.5rem;"></i></span> Cheesy Spicy Masala Maggi</div>
+                </div>
+                <img src="images/maggi_veg_noodles.png" alt="Cheesy Maggi">
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name"><span class="veg-icon"><i class="fas fa-circle"
+                                style="font-size: 0.5rem;"></i></span> Homestyle Classic Masala Maggi</div>
+                </div>
+                <img src="images/maggi_veg_noodles.png" alt="Homestyle Classic Masala Maggi">
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name"><span class="veg-icon"><i class="fas fa-circle"
+                                style="font-size: 0.5rem;"></i></span> Veg Magic Masala Maggie</div>
+                </div>
+                <img src="images/maggi_veg_noodles.png" alt="Veg Maggi">
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name"><span class="veg-icon"><i class="fas fa-circle"
+                                style="font-size: 0.5rem;"></i></span> Korean Style Maggie</div>
+                </div>
+                <img src="images/maggi_veg_noodles.png" alt="Korean Style Maggie">
+            </div>
+        </div>
+
+        <!-- Combos -->
+        <div class="menu-category" id="combos">
+            <h2>Combos</h2>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name"><span class="veg-icon"><i class="fas fa-circle"
+                                style="font-size: 0.5rem;"></i></span> Crispy Aloo Tikki Burger + Classic French Fries
+                    </div>
+                </div>
+                <img src="images/burger_real_3.png" alt="Burger Combo">
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name"><span class="veg-icon"><i class="fas fa-circle"
+                                style="font-size: 0.5rem;"></i></span> Crispy Aloo Tikki Burger + Peri Peri Fries</div>
+                </div>
+                <img src="images/burger_real_1.png" alt="Burger Combo">
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name"><span class="veg-icon"><i class="fas fa-circle"
+                                style="font-size: 0.5rem;"></i></span> Classic Homestyle Maggie + Classic French Fries
+                    </div>
+                </div>
+                <img src="images/maggi_veg_noodles.png" alt="Maggi Combo">
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name"><span class="veg-icon"><i class="fas fa-circle"
+                                style="font-size: 0.5rem;"></i></span> Soya Kebab Rolls (2) + Classic Fries</div>
+                </div>
+                <img src="images/gallery_real_4.jpeg" alt="Roll Combo">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3>Seema's Cook</h3>
+            <p>Reach us Directly through WhatsApp (+91 8115337232).</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

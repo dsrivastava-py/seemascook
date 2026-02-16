@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seema's Cook - Pure Veg Takeaway Restaurant</title>
+    <meta name="description"
+        content="Seema's Cook - Best Pure Veg Takeaway in Kanpur. Open 11:00 AM to 3:00 AM. Burgers, Wraps, Thalis & More.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo" style="text-decoration:none;">Seema's Cook <i class="fas fa-utensils"></i></a>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="business.html">Business</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Seema's Cook</h1>
+            <p>PURE VEG TAKEAWAY RESTAURANT | KANPUR</p>
+            <p>Hungry? We are open 11:00 AM to 3:00 AM!</p>
+            <div style="margin-top: 2rem; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                <a href="menu.html" class="btn">View Menu</a>
+                <a href="https://www.zomato.com/kanpur/seemas-cook-1-lajpat-nagar" class="btn zomato-btn" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Zomato_Logo.svg" alt="Zomato" style="height: 20px; vertical-align: middle; filter: brightness(0) invert(1);"> Order
+                </a>
+                <a href="business.html" class="btn" style="background-color: var(--secondary-color); border-color: var(--secondary-color);">
+                    Order Offline
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Gallery Section -->
+    <section class="gallery-section" style="padding: 4rem 5%; background: linear-gradient(to bottom, #fff, #f4f4f4);">
+        <h2 class="section-title">Visual Delights</h2>
+        <div class="gallery-grid"
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; max-width: 1200px; margin: 0 auto;">
+            <!-- Real Images from Folder -->
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="images/burger_real_1.png" alt="Exquisite Veg Burger"
+                    style="width: 100%; border-radius: 10px; cursor: pointer; transition: transform 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+            </div>
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="images/sandwich_real_1.png" alt="Grilled Sandwich"
+                    style="width: 100%; border-radius: 10px; cursor: pointer; transition: transform 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+            </div>
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="images/gallery_real_1.jpeg" alt="Freshly Prepared"
+                    style="width: 100%; border-radius: 10px; cursor: pointer; transition: transform 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+            </div>
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="images/paneer_chili_gravy.png" alt="Paneer Chili Gravy"
+                    style="width: 100%; border-radius: 10px; cursor: pointer; transition: transform 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+            </div>
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="images/gallery_real_4.jpeg" alt="Gourmet Delight"
+                    style="width: 100%; border-radius: 10px; cursor: pointer; transition: transform 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+            </div>
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="images/litti_chokha.png" alt="Loaded Burger"
+                    style="width: 100%; border-radius: 10px; cursor: pointer; transition: transform 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox"
+        style="display: none; position: fixed; z-index: 2000; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); justify-content: center; align-items: center;">
+        <span class="close-lightbox"
+            style="position: absolute; top: 20px; right: 30px; font-size: 40px; color: #fff; cursor: pointer;"
+            onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img"
+            style="max-width: 90%; max-height: 90%; border-radius: 5px; box-shadow: 0 0 20px rgba(0,0,0,0.5);">
+    </div>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2 class="section-title">Why Choose Us?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-map-marker-alt feature-icon"></i>
+                <div class="feature-title">Location: Kanpur</div>
+                <p>Serving fresh food locally.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-clock feature-icon"></i>
+                <div class="feature-title">11:00 AM - 3:00 AM</div>
+                <p>Late night cravings sorted.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-calendar-alt feature-icon"></i>
+                <div class="feature-title">Service 24x7</div>
+                <p>Always ready to serve.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-shipping-fast feature-icon"></i>
+                <div class="feature-title">Free Delivery</div>
+                <p>Up to 5 KM @ Order Value 999</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-box feature-icon"></i>
+                <div class="feature-title">Bulk Orders</div>
+                <p>Party & Corporate orders welcome.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-rupee-sign feature-icon"></i>
+                <div class="feature-title">No Extra Charges</div>
+                <p>No Packaging Charges. No GST on Offline Orders.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <h2 class="section-title">Our Menu Categories</h2>
+        <div class="category-grid">
+            <a href="menu.html#burgers" class="category-card">
+                <img src="images/burger_real_2.png" alt="Burgers">
+                <div class="category-overlay">
+                    <div class="category-title">Burgers</div>
+                </div>
+            </a>
+            <a href="menu.html#chinese" class="category-card">
+                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                    alt="Pizza & Pasta">
+                <div class="category-overlay">
+                    <div class="category-title">Pasta & Macaroni</div>
+                </div>
+            </a>
+            <a href="menu.html#rolls" class="category-card">
+                <img src="images/gallery_real_4.jpeg" alt="Kebab & Rolls">
+                <div class="category-overlay">
+                    <div class="category-title">Kebab & Rolls</div>
+                </div>
+            </a>
+            <a href="menu.html#sandwiches" class="category-card">
+                <img src="images/sandwich_real_2.png" alt="Sandwiches">
+                <div class="category-overlay">
+                    <div class="category-title">Sandwiches</div>
+                </div>
+            </a>
+            <a href="menu.html#combos" class="category-card">
+                <img src="images/burger_real_3.png" alt="Combos">
+                <div class="category-overlay">
+                    <div class="category-title">Combos</div>
+                </div>
+            </a>
+            <a href="menu.html" class="category-card">
+                <img src="images/gallery_real_3.jpeg" alt="Meal Box">
+                <div class="category-overlay">
+                    <div class="category-title">Meal Box</div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3>Seema's Cook</h3>
+            <p>Reach us Directly through WhatsApp (+91 8115337232) for commission free Happiness Starting @ just 999
+                package.</p>
+            <div class="social-links" style="margin-top: 1rem;">
+                <a href="https://wa.me/918115337232"><i class="fab fa-whatsapp"></i></a>
+                <a href="mailto:seemascook@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p style="margin-top: 2rem; font-size: 0.8rem;">&copy; 2026 Seema's Cook. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
