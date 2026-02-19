@@ -470,10 +470,7 @@ footer {
     color: inherit;
 }
 
-.zomato-card,
-.location-card {
-    grid-column: span 2;
-}
+
 
 .map-section {
     padding: 2rem 5%;
@@ -610,10 +607,40 @@ footer {
     height: 80px;
     object-fit: cover;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease;
 }
 
 .combo-collage img:hover {
     transform: scale(1.05);
+}
+
+/* Contact Page Specific Adjustments */
+.grid-half {
+    grid-column: span 1;
+}
+
+.zomato-card {
+    background-color: #cb202d !important;
+    /* Zomato Red */
+    border: none;
+    color: #fff !important;
+}
+
+.zomato-card .feature-title,
+.zomato-card p {
+    color: #fff !important;
+}
+
+.zomato-card img {
+    filter: brightness(0) invert(1) !important;
+    /* Make logo white */
+}
+
+.location-card {
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
