@@ -571,3 +571,49 @@ footer {
         /* Smaller map on mobile */
     }
 }
+
+/* Order Now Button */
+.order-now-btn {
+    display: inline-block;
+    background-color: #e74c3c;
+    /* Red */
+    color: #fff;
+    padding: 0.5rem 1.2rem;
+    margin-top: 0.8rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.order-now-btn:hover {
+    background-color: #c0392b;
+    /* Darker Red */
+    color: #fff;
+}
+
+/* Combo Collage for Business Page */
+.combo-collage {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.combo-collage img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.combo-collage img:hover {
+    transform: scale(1.05);
+}
