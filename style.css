@@ -616,6 +616,21 @@ footer {
 }
 
 /* Contact Page Specific Adjustments */
+
+/* Contact Page Specific Adjustments */
+.contact-features .features-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.contact-features .feature-card {
+    min-height: 200px;
+    /* Ensure uniform height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .grid-half {
     grid-column: span 1;
 }
@@ -638,9 +653,33 @@ footer {
 }
 
 .location-card {
-    aspect-ratio: 1 / 1;
+    /* aspect-ratio: 1 / 1; Removed for uniform rectangular shape */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+/* Swiggy Card */
+.swiggy-card {
+    background-color: #f7f7f7;
+    cursor: default;
+    border-top: 4px solid #FC8019;
+    /* Swiggy Orange */
+}
+
+.swiggy-card img {
+    height: 50px;
+    margin-bottom: 1rem;
+    filter: grayscale(100%);
+    opacity: 0.6;
+}
+
+.swiggy-card .feature-title {
+    color: #888;
+}
+
+.swiggy-card p {
+    color: #aaa;
+    font-style: italic;
 }
