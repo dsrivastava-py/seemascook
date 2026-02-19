@@ -661,25 +661,28 @@ footer {
 }
 
 /* Swiggy Card */
+/* Swiggy Card */
 .swiggy-card {
-    background-color: #f7f7f7;
-    cursor: default;
-    border-top: 4px solid #FC8019;
+    background-color: #FC8019 !important;
     /* Swiggy Orange */
+    cursor: default;
+    border: none;
+    color: #fff !important;
 }
 
 .swiggy-card img {
     height: 50px;
     margin-bottom: 1rem;
-    filter: grayscale(100%);
-    opacity: 0.6;
+    filter: brightness(0) invert(1) !important;
+    /* Make logo white */
+    opacity: 1;
 }
 
 .swiggy-card .feature-title {
-    color: #888;
+    color: #fff !important;
 }
 
 .swiggy-card p {
-    color: #aaa;
-    font-style: italic;
+    color: #fff !important;
+    font-style: normal;
 }
